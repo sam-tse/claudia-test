@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "claudia-create-member-executor",
+    "name": "claudia-create-member",
+    "region": "ca-central-1"
+  }
+}

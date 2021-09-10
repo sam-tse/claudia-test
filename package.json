@@ -1,0 +1,22 @@
+{
+  "name": "claudia-lambda",
+  "version": "1.0.0",
+  "description": "For developing and testing lambda",
+  "scripts": {
+    "get-members-create": "claudia create --name claudia-get-members --handler src/handlers/get-members.handler --region ca-central-1; claudia tag --tags claudia=lambda",
+    "get-members-update": "claudia update --no-optional-dependencies; claudia test-lambda",
+    "get-members-destroy": "claudia destroy",
+    "create-member-create": "claudia create --name claudia-create-member --handler src/handlers/create-member.handler --region ca-central-1; claudia tag --tags claudia=lambda",
+    "create-member-update": "claudia update --no-optional-dependencies; claudia test-lambda",
+    "create-member-destroy": "claudia destroy",
+    "get-file-create": "claudia create --name claudia-get-file --handler src/handlers/get-file.handler --region ca-central-1; claudia tag --tags claudia=lambda",
+    "get-file-update": "claudia update --no-optional-dependencies; claudia test-lambda",
+    "get-file-destroy": "claudia destroy"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "optionalDependencies": {
+    "aws-sdk": "^2.983.0"
+  }
+}
